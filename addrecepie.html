@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link   rel="stylesheet"  href="./receipe.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body >
+        <div class="jumbotron mx-auto col-6 middle"   style="background-color:#f3f3f3" >
+            <h2>The Receipe App</h2> <br> 
+              <div id="search">
+                  <input type="text"  id="searchbar" placeholder="Search">
+                  <button onclick="searchfunction()"  class="button btn-primary">Search</button> <br><br><br>
+                  <div>
+                      <table id = "receivedDataList" >
+                          <thead>
+                              <th>Name</th>
+                              <th>Description</th>
+                              <th>Ingredients</th>
+                          </thead>
+                      </table>
+                  </div>
+                  <button  class="button btn-success" onclick="myFunction()">Add New Receipe</button>
+              </div><br>
+      </div>
+  <form>     
+     <div class="jumbotron mx-auto col-6" id="addReceipeshow" class="para"  style="background-color:#f3f3f3">
+        <h2 class=" middle">What you want to save Today</h2><br><br>
+        <p class="para">Recepie Name:</p> <input id="recepiename" placeholder="Enter New Recepie"><br><br>
+        <p class="para">Recepie Preparation: </p> 
+         <textarea  rows="3" cols="40" id="recepiesteps"  >
+        </textarea><br><br><br>
+        <div id="ingredientformdiv">
+        <input type="text"  id="ingredientform"  placeholder="Add Ingridient">
+        <button  onclick="addingridient()"  class="button btn-primary"  type="button"> Add Ingridient</button><br><br>
+        </div>
+        <button  id="addnewrecepie" onclick="addnewRecepie()"  class="button btn-success"  type="button">Add Receipe</button>
+        </div>
+    </form>  
+    
+       <div id="display" class=" jumbotron mx-auto col-6"  style="background-color:#f3f3f3">
+        <h2 class=" middle">List of Recepies</h2><br><br>
+
+       </div>
+        <script src="./addrecepie.js"></script>
+
+    </body>
+</html>
